@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align itens</title>
+    <Style>
+        .conteiner {
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+        }
+        
+        .item {
+            background-color: blueviolet;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            flex: 1;
+        }
+        
+        .center {
+            align-items: center;
+        }
+        
+        .stretch {
+            align-items: stretch;
+        }
+        
+        .start {
+            align-items: flex-start;
+        }
+        
+        .end {
+            align-items: flex-end;
+        }
+        
+        .baseline {
+            align-items: baseline;
+        }
+        
+        .column {
+            flex-direction: column;
+        }
+        
+        .central {
+            height: 300px;
+            justify-content: center;
+        }
+        
+        .central .item {
+            flex: 0;
+            padding: 20px;
+        }
+    </Style>
+</head>
+
+<body>
+    <h1>Row</h1>
+    <p>Center</p>
+    <section class="conteiner center">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Item 3 mais algum texto. Lipsum</div>
+        <div class="item">
+            <img scr="./flex-projeto/imagens/lg_Claudio.jpg">
+        </div>
+    </section>
+    <p>stretch</p>
+    <section class="conteiner stretch">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet</div>
+        <div class="item">Item 3 mais algum texto. Lipsum</div>
+    </section>
+    <p>flex-start</p>
+    <section class="conteiner start">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet</div>
+        <div class="item">Item 3 mais algum texto. Lipsum</div>
+    </section>
+    <p>flex-end</p>
+    <section class="conteiner end">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet</div>
+        <div class="item">Item 3 mais algum texto. Lipsum</div>
+    </section>
+    <p>baseLine</p>
+    <section class="conteiner baseline">
+        <div class="item"><br>Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet</div>
+        <div class="item">Item 3 mais algum texto. Lipsum</div>
+    </section>
+    <h1>Column</h1>
+    <p>flex-start</p>
+    <section class="conteiner start column">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet</div>
+        <div class="item">Item 3 mais algum texto. Lipsum</div>
+    </section>
+    <p>flex-end</p>
+    <section class="conteiner end column">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet</div>
+        <div class="item">Item 3 mais algum texto. Lipsum</div>
+    </section>
+    <p>Center</p>
+    <section class="conteiner center column">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Item 3 mais algum texto. Lipsum</div>
+    </section>
+    <p>baseLine</p>
+    <section class="conteiner baseline column">
+        <div class="item"><br>Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet</div>
+        <div class="item">Item 3 mais algum texto. Lipsum</div>
+    </section>
+    <p>alinhamento central à tela</p>
+    <section class="conteiner central center">
+        <div class="item">Lorem Ipsum is therefore always free from repetition, injected humor, or non-characteristic words etc.
+        </div>
+
+    </section>
+</body>
+
+</html>
